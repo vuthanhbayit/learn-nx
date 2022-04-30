@@ -1,0 +1,32 @@
+{
+  "root": "packages/hello-swc",
+  "sourceRoot": "packages/hello-swc/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/hello-swc",
+        "main": "packages/hello-swc/src/index.ts",
+        "tsConfig": "packages/hello-swc/tsconfig.lib.json",
+        "assets": ["packages/hello-swc/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/hello-swc/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/hello-swc"],
+      "options": {
+        "jestConfig": "packages/hello-swc/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

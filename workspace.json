@@ -1,4 +1,10 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "composables": "packages/composables",
+    "hello-swc": "packages/hello-swc",
+    "hello-tsc": "packages/hello-tsc",
+    "publish-me": "packages/publish-me",
+    "utils": "packages/utils"
+  }
 }

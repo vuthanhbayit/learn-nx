@@ -1,0 +1,11 @@
+{
+  "name": "@learn-nx/utils",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "node index.js",
+    "build": "unbuild"
+  },
+  "devDependencies": {
+    "unbuild": "latest"
+  }
+}

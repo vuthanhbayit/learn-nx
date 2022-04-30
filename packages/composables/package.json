@@ -1,0 +1,14 @@
+{
+  "name": "@learn-nx/composables",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "node index.js",
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "@learn-nx/utils": "*"
+  },
+  "devDependencies": {
+    "unbuild": "latest"
+  }
+}
